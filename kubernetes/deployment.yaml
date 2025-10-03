@@ -13,7 +13,7 @@ spec:
         app: companion-app
     spec:
       containers:
-        - name: rec-app
+        - name: companion-app-backend
           image: "us-central1-docker.pkg.dev/ishamirulinda-sdlc/companion-app/backend:IMAGE_PLACEHOLDER"
           ports:
             - containerPort: 5000

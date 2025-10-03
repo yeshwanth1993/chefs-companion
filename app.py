@@ -7,7 +7,7 @@ recipes_db = {}
 
 @app.route('/recipes', methods=['POST'])
 def add_recipe():
-    """Adds a new recipe."""
+    """Adds a new recipe to the cook book"""
     recipe_data = request.get_json()
     if not recipe_data or 'name' not in recipe_data or 'ingredients' not in recipe_data or 'instructions' not in recipe_data:
         return jsonify({'error': 'Invalid recipe data. Required fields: name, ingredients, instructions'}), 400
