@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: companion-app-backend-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: companion-app
+  template:
+    metadata:
+      labels:
+        app: companion-app
+    spec:
+      containers:
+        - name: rec-app
+          image: "us-central1-docker.pkg.dev/ishamirulinda-sdlc/companion-app/backend:IMAGE_PLACEHOLDER"
+          ports:
+            - containerPort: 5000
