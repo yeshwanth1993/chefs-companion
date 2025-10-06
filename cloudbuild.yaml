@@ -1,28 +1,8 @@
 steps:
 # Build container
 - name: 'gcr.io/cloud-builders/docker'
-  id: 'BUILD'
   args: ['build', '-t', 'us-central1-docker.pkg.dev/ishamirulinda-sdlc/companion-app/backend:${SHORT_SHA}', '.']
 
-# Step 2: Push the container image to Artifact Registry
-- name: 'gcr.io/cloud-builders/docker'
-  args:
-    - 'push'
-    - 'us-central1-docker.pkg.dev/ishamirulinda-sdlc/companion-app/backend:${SHORT_SHA}'
-  id: 'PUSH'
-  waitFor: ['BUILD']
-
-# Step 3: Deploy to GKE using gke-deploy
-- name: "gcr.io/cloud-builders/gke-deploy"
-  id: 'DEPLOY'
-  args:
-    - run
-    - --filename=kubernetes/deployment.yaml
-    - --image=us-central1-docker.pkg.dev/ishamirulinda-sdlc/companion-app/backend:${SHORT_SHA}
-    - --cluster=tf-cluster
-    - --location=us-central1
-    - --project=ishamirulinda-sdlc
-  waitFor: ['PUSH']
 images:
 - 'us-central1-docker.pkg.dev/ishamirulinda-sdlc/companion-app/backend:${SHORT_SHA}'
 
