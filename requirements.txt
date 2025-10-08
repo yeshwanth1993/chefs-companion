@@ -1,1 +1,8 @@
 Flask
+
+# Process image
+Pillow==9.0.0
+
+# Text analysis libraries
+better-profanity
+textblob==0.15.3
