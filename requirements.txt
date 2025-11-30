@@ -1,7 +1,7 @@
 Flask
 
 # Process image
-Pillow==9.0.0
+Pillow
 
 # Text analysis libraries
 better-profanity
