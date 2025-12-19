@@ -1,0 +1,52 @@
+CONTRIBUTING.md
+  8fac770c0aab6848 1-27
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.0.24",
+  "base_commit_sha": "191cbf6342818bb6664376420fb66e3d1ba8d278",
+  "prompts": {
+    "8fac770c0aab6848": {
+      "agent_id": {
+        "tool": "gemini",
+        "id": "b5c11e0f-adb0-42a9-90f5-5363d924b1af",
+        "model": "gemini-2.5-flash"
+      },
+      "human_author": "unknown",
+      "messages": [
+        {
+          "type": "user",
+          "text": "remove the read me file and add a contributing .md file",
+          "timestamp": "2025-12-19T19:50:45.960Z"
+        },
+        {
+          "type": "tool_use",
+          "name": "run_shell_command",
+          "input": {
+            "command": "rm README.md",
+            "description": "Removing README.md file"
+          },
+          "timestamp": "2025-12-19T19:50:50.261Z"
+        },
+        {
+          "type": "tool_use",
+          "name": "write_file",
+          "input": {
+            "content": "# Contributing to Chef's Companion\n\nWe welcome contributions to Chef's Companion! To contribute, please follow these guidelines:\n\n## How to Contribute\n\n1.  Fork the repository.\n2.  Create a new branch for your feature or bug fix.\n3.  Make your changes and ensure they adhere to the project's coding style.\n4.  Write clear and concise commit messages.\n5.  Submit a pull request with a detailed description of your changes.\n\n## Code Style\n\n*   Follow PEP 8 for Python code.\n*   Use clear and descriptive variable names.\n*   Add comments where necessary to explain complex logic.\n\n## Reporting Bugs\n\nIf you find a bug, please open an issue on GitHub and provide:\n\n*   A clear and concise description of the bug.\n*   Steps to reproduce the behavior.\n*   Expected behavior.\n*   Screenshots or error messages if applicable.\n\nThank you for contributing!",
+            "file_path": "CONTRIBUTING.md"
+          },
+          "timestamp": "2025-12-19T19:50:54.630Z"
+        },
+        {
+          "type": "assistant",
+          "text": "I have removed the `README.md` file and added a `CONTRIBUTING.md` file with basic guidelines.",
+          "timestamp": "2025-12-19T19:50:55.925Z"
+        }
+      ],
+      "total_additions": 28,
+      "total_deletions": 0,
+      "accepted_lines": 27,
+      "overriden_lines": 1
+    }
+  }
+}
