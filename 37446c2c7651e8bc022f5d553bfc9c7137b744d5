@@ -1,0 +1,51 @@
+README.md
+  9428affd1b4bb797 3,7-9,11,14-16,23,27,34,38,40,42-45
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.0.24",
+  "base_commit_sha": "37446c2c7651e8bc022f5d553bfc9c7137b744d5",
+  "prompts": {
+    "9428affd1b4bb797": {
+      "agent_id": {
+        "tool": "gemini",
+        "id": "2f28edf8-391d-4220-b039-6602a9dc5b74",
+        "model": "gemini-2.5-pro"
+      },
+      "human_author": "unknown",
+      "messages": [
+        {
+          "type": "user",
+          "text": "make read me short",
+          "timestamp": "2025-12-19T07:38:40.095Z"
+        },
+        {
+          "type": "tool_use",
+          "name": "read_file",
+          "input": {
+            "file_path": "README.md"
+          },
+          "timestamp": "2025-12-19T07:38:43.103Z"
+        },
+        {
+          "type": "tool_use",
+          "name": "write_file",
+          "input": {
+            "content": "# Chefs Companion\n\nA Flask-based web application for discovering, managing, and rating recipes. Browse, add, and rate recipes with comments and image uploads.\n\n## Features\n\n*   **Recipe Browsing & Management**: View, add, and see detailed pages for recipes.\n*   **User Ratings**: Rate recipes, leave comments (with profanity filtering and sentiment analysis), and upload images.\n*   **Discover**: Find popular recipes based on user ratings.\n\n## Technologies\n\n*   **Backend**: Python (Flask)\n*   **Frontend**: HTML/CSS (Jinja2)\n*   **Libraries**: Pillow, better-profanity, TextBlob\n*   **Deployment**: Docker, Google Cloud Build & Cloud Run\n\n## Getting Started\n\n### Prerequisites\n\n*   Python 3.10+\n*   Docker (optional)\n\n### Local Setup\n\n1.  **Clone the repo & install dependencies:**\n    ```bash\n    git clone https://github.com/your-username/chefs-companion.git\n    cd chefs-companion\n    pip install -r requirements.txt\n    ```\n\n2.  **Run the app:**\n    ```bash\n    python app.py\n    ```\n    View at `http://127.0.0.1:8080`.\n\n### Docker\n\n```bash\ndocker build -t chefs-companion .\ndocker run -p 8080:8080 chefs-companion\n```\n",
+            "file_path": "README.md"
+          },
+          "timestamp": "2025-12-19T07:38:51.856Z"
+        },
+        {
+          "type": "assistant",
+          "text": "I've shortened the `README.md` file.",
+          "timestamp": "2025-12-19T07:38:54.247Z"
+        }
+      ],
+      "total_additions": 17,
+      "total_deletions": 71,
+      "accepted_lines": 17,
+      "overriden_lines": 0
+    }
+  }
+}
