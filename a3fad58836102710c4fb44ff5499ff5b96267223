@@ -1,0 +1,55 @@
+README.md
+  07e38d33aa7ab6f1 1-43
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.0.24",
+  "base_commit_sha": "a3fad58836102710c4fb44ff5499ff5b96267223",
+  "prompts": {
+    "07e38d33aa7ab6f1": {
+      "agent_id": {
+        "tool": "gemini",
+        "id": "eec6a6f2-5181-484a-8a94-abe1c0472b8c",
+        "model": "gemini-2.5-flash"
+      },
+      "human_author": "unknown",
+      "messages": [
+        {
+          "type": "user",
+          "text": "add a readme file to this projecddt",
+          "timestamp": "2025-12-19T20:14:34.409Z"
+        },
+        {
+          "type": "tool_use",
+          "name": "list_directory",
+          "input": {
+            "dir_path": "."
+          },
+          "timestamp": "2025-12-19T20:14:35.934Z"
+        },
+        {
+          "type": "tool_use",
+          "name": "write_file",
+          "input": {
+            "content": "# Chef's Companion\n\n## Project Description\n\nChef's Companion is a web application designed to help users manage and discover recipes. It provides functionalities for viewing recipes, and potentially managing user-generated content like recipe ratings and uploads.\n\n## Setup Instructions\n\nTo set up the project locally, follow these steps:\n\n1.  **Clone the repository:**\n\n    ```bash\n    git clone https://github.com/your-repo/chefs-companion.git\n    cd chefs-companion\n    ```\n\n2.  **Create a virtual environment (recommended):**\n\n    ```bash\n    python3 -m venv venv\n    source venv/bin/activate\n    ```\n\n3.  **Install dependencies:**\n\n    ```bash\n    pip install -r requirements.txt\n    ```\n\n## How to Run\n\nTo run the application, ensure your virtual environment is activated and then execute:\n\n```bash\npython app.py\n```\n\nThe application should then be accessible in your web browser at `http://127.0.0.1:5000` (or similar, as indicated by the Flask server).\n\n## Contribution\n\nSee `CONTRIBUTING.md` for guidelines on how to contribute to this project.",
+            "file_path": "README.md"
+          },
+          "timestamp": "2025-12-19T20:14:41.820Z"
+        },
+        {
+          "type": "tool_use",
+          "name": "run_shell_command",
+          "input": {
+            "command": "git status && git diff HEAD",
+            "description": "Check git status and diff to prepare for commit."
+          },
+          "timestamp": "2025-12-19T20:14:45.965Z"
+        }
+      ],
+      "total_additions": 43,
+      "total_deletions": 0,
+      "accepted_lines": 43,
+      "overriden_lines": 0
+    }
+  }
+}
