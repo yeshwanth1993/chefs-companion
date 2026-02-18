@@ -1,0 +1,23 @@
+sample-test-file.txt
+  b0b22d7d8bdabb80 1-5
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.1.4",
+  "base_commit_sha": "9a9f8883125fd3f34cb282b47febf9b232b903a0",
+  "prompts": {
+    "b0b22d7d8bdabb80": {
+      "agent_id": {
+        "tool": "gemini",
+        "id": "927c3ace-7b46-4775-af89-ab30711cc7c1",
+        "model": "gemini-3-flash-preview"
+      },
+      "human_author": "unknown",
+      "messages": [],
+      "total_additions": 7,
+      "total_deletions": 6,
+      "accepted_lines": 5,
+      "overriden_lines": 0
+    }
+  }
+}
