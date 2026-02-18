@@ -1,0 +1,21 @@
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.1.4",
+  "base_commit_sha": "e47df1efc852a5112c209a512b31dd9a122f3dda",
+  "prompts": {
+    "9e37aebddefca666": {
+      "agent_id": {
+        "tool": "gemini",
+        "id": "f9e3fd3f-f3e1-4dc5-a4ef-a1a4997fd6b4",
+        "model": "gemini-3-flash-preview"
+      },
+      "human_author": "unknown",
+      "messages": [],
+      "total_additions": 37,
+      "total_deletions": 0,
+      "accepted_lines": 37,
+      "overriden_lines": 0
+    }
+  }
+}
